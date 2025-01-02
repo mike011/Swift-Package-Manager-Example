@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class iOSDeviceCaller {
-    func name() -> String {
+    @MainActor func name() -> String {
         return UIDevice.current.name
     }
 }
